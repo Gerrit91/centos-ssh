@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
-ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' > /dev/null
+ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N '' > /dev/null
 
 AUTHORIZED_KEY_PATH=${AUTHORIZED_KEY_PATH:=/authorized_keys}
 
