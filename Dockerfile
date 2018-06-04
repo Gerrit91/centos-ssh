@@ -8,4 +8,3 @@ COPY entrypoint.sh /
 
 EXPOSE 22
 ENTRYPOINT ["/entrypoint.sh"]
-
